@@ -1,0 +1,1672 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Aniversario - Nelson y Olinda</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  <style>
+    .spantitulo{
+        
+    font-size: 30px;
+    font-family: ui-serif;
+    font-weight: 900;
+    }
+  
+#rect3810,
+#rect3802,
+#rect3826,
+#rect3806,
+#rect3820,
+#rect3818,
+#rect3822,
+#rect3824 {
+  z-index: -5;
+  position: relative;
+  animation-name: mov_1;
+  animation-duration: 200ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#rect3808,
+#rect3828,
+#rect3812,
+#rect3814 {
+  position: relative;
+  animation-name: mov_1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+#rect3804 {
+  z-index: -5;
+  position: relative;
+  /*   animation-name: mov_2;
+    animation-duration: 2s;
+      animation-iteration-count: infinite;
+animation-timing-function: ease-in; */
+}
+
+@-webkit-keyframes mov_1 {
+  from {
+    opacity: 1;
+    -webkit-transform: translate(4px, -1px);
+    transform: translate(4px, -1px);
+  }
+  to {
+    -webkit-transform: translate(-5px, -1px);
+    transform: translate(-5px, -1px);
+    opacity: 0;
+  }
+}
+@-o-keyframes mov_1 {
+  from {
+    opacity: 1;
+    -webkit-transform: translate(4px, -1px);
+    transform: translate(4px, -1px);
+  }
+  to {
+    -webkit-transform: translate(-5px, -1px);
+    transform: translate(-5px, -1px);
+    opacity: 0;
+  }
+}
+@-moz-keyframes mov_1 {
+  from {
+    opacity: 1;
+    -webkit-transform: translate(4px, -1px);
+    transform: translate(4px, -1px);
+  }
+  to {
+    -webkit-transform: translate(-5px, -1px);
+    transform: translate(-5px, -1px);
+    opacity: 0;
+  }
+}
+@keyframes mov_1 {
+  from {
+    opacity: 1;
+    -webkit-transform: translate(4px, -1px);
+    transform: translate(4px, -1px);
+  }
+  to {
+    -webkit-transform: translate(-5px, -1px);
+    transform: translate(-5px, -1px);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes mov_2 {
+  from {
+    opacity: 1;
+    -webkit-transform: translate(-4px, -1px);
+    transform: translate(-4px, -1px);
+  }
+  to {
+    -webkit-transform: translate(-8px, -1px);
+    transform: translate(-8px, -1px);
+  }
+}
+@-o-keyframes mov_2 {
+  from {
+    opacity: 1;
+    -webkit-transform: translate(-4px, -1px);
+    transform: translate(-4px, -1px);
+  }
+  to {
+    -webkit-transform: translate(-8px, -1px);
+    transform: translate(-8px, -1px);
+  }
+}
+@-moz-keyframes mov_2 {
+  from {
+    opacity: 1;
+    -webkit-transform: translate(-4px, -1px);
+    transform: translate(-4px, -1px);
+  }
+  to {
+    -webkit-transform: translate(-8px, -1px);
+    transform: translate(-8px, -1px);
+  }
+} 
+
+svg {
+  position: relative;
+  animation-name: mov_heart;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes mov_heart {
+  0% {
+    -webkit-transform: translate(0px, 10px);
+    transform: translate(0px, 10px);
+  }
+  50% {
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+  }
+
+  100% {
+    -webkit-transform: translate(0px, 10px);
+    transform: translate(0px, 10px);
+  }
+}  
+ 
+
+    /* Reset CSS */
+    * {
+      min-width: 0;
+      font: inherit;
+      box-sizing: border-box;
+    }
+
+    img, video, svg {
+      display: block;
+      height: auto;
+      max-width: 100%;
+    }
+
+    /* Estilos generales */
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Indie Flower", cursive;
+      background: #fde3a7 ;
+      color: #013243;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3 {
+      text-wrap: balance;
+      font-family: monospace;
+      font-size: 2.5rem;
+      text-align: center;
+      color: #2e2e33;;
+      margin: 20px 0;
+    }
+
+    .anniversary-date {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 20px;
+      color: #1bbc9b;
+    }
+
+    section { 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Navegación */
+    .nav {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 15px;
+      background: rgba(255, 255, 255, 0.7);
+      padding: 10px 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+
+    .nav button {
+      border: none;
+      background: #c0392b;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 15px;
+      cursor: pointer;
+      font-family: "Indie Flower", cursive;
+      font-size: 1rem;
+      transition: all 0.3s;
+    }
+
+    .nav button:hover {
+      background: #1bbc9b;
+      transform: scale(1.1);
+    }
+
+    /* Sección 1: Header */
+    .header { 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
+
+    .hearts-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+ .carta-main {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .carta-container {
+      position: relative;
+    }
+
+    .carta-cover {
+      position: absolute;
+      border-left: 220px solid transparent;
+      border-right: 220px solid transparent;
+      border-top: 120px solid #fe3334;
+      border-bottom: 120px solid transparent;
+      transition: transform .75s;
+      transform-origin: top;
+    }
+
+    .carta-paper {
+      position: absolute;
+      padding: 25px;
+      line-height: 30px;
+      right: 5px;
+      z-index: -1;
+      background: white;
+      width: 430px;
+      height: 210px;
+      text-align: center;
+      font-size: 17px;
+      transition: all .75s;
+    }
+
+    .carta-letter {
+      border-left: 220px solid #ff989e;
+      border-right: 220px solid #ff989e;
+      border-top: 120px solid transparent;
+      border-bottom: 120px solid #ff858a;
+    }
+
+    .carta-options {
+      display: flex;
+      gap: 5rem;
+    }
+
+    .carta-options button {
+      color: #ff3234;
+      font-weight: 600;
+      border-radius: 3px;
+      background: #fad7df;
+      padding: 0.5rem 1rem;
+      border: 1px solid #fe3334;
+      cursor: pointer;
+    }
+
+    .carta-options button:hover {
+      background: #ff989e;
+      color: white;
+    }
+
+    .carta-open-cover {
+      transform: rotatex(180deg);
+    }
+
+    .carta-open-paper {
+      animation: cartaOpenPaper .5s forwards;
+    }
+
+    @keyframes cartaOpenPaper {
+      0% { top: 0; }
+      100% { top: -120px; }
+    }
+
+    .carta-close-paper {
+      animation: cartaClosePaper .5s forwards;
+    }
+
+    @keyframes cartaClosePaper {
+      0% { top: -120px; }
+      100% { top: 0; }
+    }
+
+    .carta-heart {
+      display: none;
+      position: absolute;
+      top: 25%;
+      left: 46.5%;
+      margin: auto;
+      font-size: 3rem;
+      color: #fe3334;
+      animation: cartaHeartGrow 1s forwards;
+    }
+
+    @keyframes cartaHeartGrow {
+      0% {
+        scale: 1;
+        opacity: 1;
+      }
+      100% {
+        scale: 3;
+        opacity: 0;
+      }
+    }
+    /* Sección 2: Tarjeta */
+    .card-container {
+      perspective: 2000px;
+      width: 300px;
+      height: 400px;
+      margin: 50px auto;
+    }
+
+    .card {
+      color: #013243;
+      position: relative;
+      width: 300px;
+      height: 400px;
+      background: #e0e1dc;
+      transform-style: preserve-3d;
+      transform: perspective(2000px);
+      box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5), 20px 0 60px rgba(0, 0, 0, 0.5);
+      transition: 1s;
+    }
+
+    .card:hover {
+      transform: perspective(2000px) rotate(15deg) scale(1.2);
+      box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5), 0 10px 100px rgba(0, 0, 0, 0.5);
+    }
+
+    .card:before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background: #bac1ba;
+      transform-origin: bottom;
+      transform: skewX(-45deg);
+    }
+
+    .card:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -5px;
+      width: 5px;
+      height: 100%;
+      background: #92a29c;
+      transform-origin: left;
+      transform: skewY(-45deg);
+    }
+
+    .card .imgBox {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-origin: left;
+      transition: 0.7s;
+    }
+
+    .card .bark {
+      position: absolute;
+      background: #e0e1dc;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: 0.7s;
+    }
+
+    .card .imgBox img {
+      min-width: 250px;
+      height: 100%;
+    }
+
+    .card:hover .imgBox {
+      transform: rotateY(-135deg);
+    }
+
+    .card:hover .bark {
+      opacity: 1;
+      transition: 0.6s;
+      box-shadow: 300px 200px 100px rgba(0, 0, 0, 0.4) inset;
+    }
+
+    .card .details {
+      position: absolute;
+      top: 0;
+      left: 0;
+      box-sizing: border-box;
+      padding: 0 0 0 10px;
+      z-index: -1;
+      margin-top: 70px;
+    }
+
+    .card .details p {
+      font-size: 15px;
+      line-height: 5px;
+      transform: rotate(-10deg);
+      padding: 0 0 0 20px;
+    }
+
+    .card .details h4 {
+      text-align: center;
+      font-size: 26px;
+      line-height: 1px;
+    }
+
+    .color1 { color: #1bbc9b; }
+    .color2 { color: #c0392b; }
+    .text-right { text-align: right; }
+
+    /* Sección 3: Corazón SVG */
+    .cont_corazon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 40px auto;
+    }
+
+    .cont_corazon h1 {
+      margin: 15px 0;
+    }
+
+    /* Sección 4: Carrusel */
+    .carousel-product {
+      width: 80%;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Sección 5: Carta de amor */
+    .container-letter {
+      position: relative;
+      width: 440px;
+      height: 300px;
+      margin: 50px auto;
+    }
+
+    .cover {
+      position: absolute;
+      border-left: 220px solid transparent;
+      border-right: 220px solid transparent;
+      border-top: 120px solid #fe3334;
+      border-bottom: 120px solid transparent;
+      transition: transform .75s;
+      transform-origin: top;
+      cursor: pointer;
+    }
+
+    .paper {
+      position: absolute;
+      padding: 25px;
+      line-height: 30px;
+      right: 5px;
+      z-index: -1;
+      background: white;
+      width: 430px;
+      height: 210px;
+      text-align: center;
+      font-size: 17px;
+      transition: all .75s;
+    }
+
+    .letter {
+      border-left: 220px solid #ff989e;
+      border-right: 220px solid #ff989e;
+      border-top: 120px solid transparent;
+      border-bottom: 120px solid #ff858a;
+    }
+
+    .open-cover {
+      transform: rotatex(180deg);
+    }
+
+    .open-paper {
+      animation: openPaper .5s forwards;
+    }
+
+    @keyframes openPaper {
+      0% { top: 0; }
+      100% { top: -120px; }
+    }
+
+    .close-paper {
+      animation: closePaper .5s forwards;
+    }
+
+    @keyframes closePaper {
+      0% { top: -120px; }
+      100% { top: 0; }
+    }
+
+    .heart {
+      display: none;
+      position: absolute;
+      top: 25%;
+      left: 46.5%;
+      margin: auto;
+      font-size: 3rem;
+      color: #fe3334;
+      animation: crecer 1s forwards;
+    }
+
+    @keyframes crecer {
+      0% {
+        scale: 1;
+        opacity: 1;
+      }
+      100% {
+        scale: 3;
+        opacity: 0;
+      }
+    }
+
+    /* Sección 6: Calendario con mensajes */
+    .calendar-container {
+      position: relative;
+      width: min(400px, 100%);
+      height: 500px;
+      background: rgba(0, 0, 0, 0.8);
+      border-radius: 15px;
+      padding: 20px;
+      color: white;
+      margin: 20px auto;
+    }
+
+    .calendar-header {
+      text-align: center;
+      padding: 10px;
+    }
+
+    .calendar-header h1 {
+      color: white;
+      margin: 0;
+    }
+
+    .calendar-header p {
+      margin: 5px 0;
+    }
+
+    .calendar-list {
+      list-style: none;
+      width: 100%;
+      height: 50%;
+      position: relative;
+      perspective: 900px;
+      transform-style: preserve-3d;
+    }
+
+    .calendar-list > li {
+      position: absolute;
+      left: 50%;
+      top: calc(50% - 1.2rem);
+      --rotateX: calc(1deg * var(--rotateDegrees) * calc(var(--day_idx) - var(--currentDay)));
+      transform: rotateX(var(--rotateX)) translateZ(190px) translateX(-50%) scale(var(--scale, 1));
+      --hue: calc(var(--rotateDegrees) * var(--day_idx));
+      background-color: hsl(var(--hue), 50%, var(--lightness, 50%));
+      width: 70%;
+      color: white;
+      display: grid;
+      grid-template-columns: 2.5rem auto;
+      height: 2.4rem;
+      transition: transform 500ms ease, background-color 500ms ease;
+    }
+
+    .calendar-list > li.active {
+      --lightness: 30%;
+      --scale: 1.1;
+    }
+
+    .calendar-list > li > * {
+      display: grid;
+      align-items: center;
+    }
+
+    .calendar-list li > time {
+      text-align: center;
+    }
+
+    .calendar-list li > span {
+      padding-inline-start: 0.5rem;
+      color: white;
+    }
+
+    .controls {
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 0.125rem;
+    }
+
+    .controls button {
+      width: 1.5rem;
+      aspect-ratio: 1;
+      font-size: 0.9rem;
+      color: white;
+      border: none;
+      background: #39657e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .controls button:hover,
+    .controls button:focus {
+      background: rgb(6, 60, 131);
+    }
+
+    .controls button:active {
+      transform: scale(0.9);
+    }
+
+    /* Audio control */
+    #music-controls {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 768px) {
+      .container-letter {
+        transform: scale(0.8);
+      }
+      
+      .card-container {
+        transform: scale(0.8);
+      }
+      
+      .calendar-container {
+        width: 90%;
+      }
+      
+      .cont_corazon svg {
+        width: 200px;
+      }
+    }
+    
+     .amor_olinda_page { 
+            background-color: #e2aac5; /* Color rosa inicial */ 
+           
+            transition: background-color 500ms ease;
+        }
+        
+        .amor_olinda_header {
+            position: absolute;
+            z-index: 999;
+            text-align: center;
+            top: 0rem;
+            padding: 1rem;
+            background: inherit;
+            width: 100%;
+        }
+        
+        .amor_olinda_header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .amor_olinda_header p {
+            font-size: 1.2rem;
+        }
+        
+        .amor_olinda_container {
+            position: relative;
+            width: min(90%, 400px);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .amor_olinda_messages {
+            list-style: none;
+            width: 100%;
+            height: 50%;
+            position: relative;
+            perspective: 900px;
+            transform-style: preserve-3d;
+        }
+        
+        .amor_olinda_messages > li {
+            position: absolute;
+            left: 50%;
+            top: calc(50% - 1.2rem);
+            --rotateX: calc(
+                1deg * var(--rotateDegrees) * calc(var(--day_idx) - var(--currentDay))
+            );
+            transform: rotateX(var(--rotateX)) translateZ(190px) translateX(-50%)
+                scale(var(--scale, 1));
+            /* Aquí se genera el color basado en el índice del mensaje */
+            --hue: calc(var(--rotateDegrees) * var(--day_idx));
+            background-color: hsl(var(--hue), 50%, var(--lightness, 50%));
+            width: 100%;
+            color: white;
+            display: grid;
+            grid-template-columns: 2.5rem auto;
+            min-height: 2.4rem;
+            height: auto;
+            padding: 0.5rem 0;
+            transition: transform 500ms ease, background-color 500ms ease;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        }
+        
+        .amor_olinda_messages > li.active_message {
+            --lightness: 30%;
+    --scale: 1.1;
+    width: 100%;
+        }
+        
+        .amor_olinda_messages > li > * {
+            display: grid;
+            align-items: center;
+        }
+        
+        .amor_olinda_item_number {
+            text-align: center;
+        }
+        
+        .amor_olinda_item_text {
+            padding-inline-start: 0.5rem;
+            padding-right: 0.5rem;
+            color: white;
+            line-height: 1.4;
+            font-size: 0.95rem;
+            word-wrap: break-word;
+        }
+        
+        .amor_olinda_controls {
+            position: absolute;
+            top: 50%;
+            right: -40px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        @media (max-width: 480px) {
+            .amor_olinda_controls {
+                right: -10px;
+            }
+        }
+        
+        .amor_olinda_button {
+            width: 2.5rem;
+            height: 2.5rem;
+            font-size: 1.2rem;
+            color: white;
+            border: none;
+            background: #39657e;
+            display: flex;
+            place-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+        
+        .amor_olinda_button:hover,
+        .amor_olinda_button:focus {
+            background: rgb(6, 60, 131);
+        }
+        
+        .amor_olinda_button:active {
+            transform: scale(0.9);
+        }
+        
+
+        .amor_olinda_date {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .amor_olinda_heart {
+            position: fixed;
+            animation: heartFloat 5s ease-in-out infinite;
+            opacity: 0.5;
+            font-size: 1.5rem;
+            pointer-events: none;
+        }
+        
+        @keyframes heartFloat {
+            0% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(10deg); }
+            100% { transform: translateY(0) rotate(0deg); }
+        }
+        
+        .amor_olinda_swipe_hint {
+            position: absolute;
+            bottom: 60px;
+            width: 100%;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+            animation: fadeInOut 3s ease-in-out infinite;
+        }
+        
+        @keyframes fadeInOut {
+            0% { opacity: 0.3; }
+            50% { opacity: 1; }
+            100% { opacity: 0.3; }
+        }
+        
+        /* Ocultar la pista de deslizamiento después de cierto tiempo */
+        .amor_olinda_swipe_hint.hidden {
+            display: none;
+        }
+  </style>
+</head>
+<body  class="amor_olinda_page">
+    
+  <div id="music-controls" onclick="toggleMusic()">
+    <span id="play-icon">▶️</span>
+  </div>
+  <audio id="music" loop>
+    <source src="https://drive.google.com/uc?id=1-d1ysEfUVj0nCT117PIxf6m6pTNDc8Tg&export=download" type="audio/mp3">
+  </audio>
+
+  <canvas class="hearts-bg"></canvas>
+
+  <!-- Navegación -->
+  <div class="nav">
+    <button onclick="scrollToSection('header')">Inicio</button>
+    <button onclick="scrollToSection('card')">Tarjeta</button>
+    <button onclick="scrollToSection('heart')">Corazón</button>
+    <button onclick="scrollToSection('carousel')">Fotos</button>
+    <button onclick="scrollToSection('letter')">Carta</button>
+    <button onclick="scrollToSection('calendar')">Mensajes</button>
+  </div>
+
+  <!-- Sección 3: Corazón SVG -->
+  <section id="heart">
+    <div class="cont_corazon" style="
+    z-index: 99999 !important; ">
+     
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="285"
+   height="200"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="corazon1.svg">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="331.11267 : 470.55503 : 1"
+       inkscape:vp_y="-114.03555 : 993.47667 : 0"
+       inkscape:vp_z="351.78171 : -213.14729 : 0"
+       inkscape:persp3d-origin="673.2305 : 245.09276 : 1"
+       id="perspective3832" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="113.13962"
+     inkscape:cy="121.70077"
+     inkscape:document-units="px"
+     inkscape:current-layer="g3014"
+     showgrid="false"
+     inkscape:window-width="1286"
+     inkscape:window-height="622"
+     inkscape:window-x="0"
+     inkscape:window-y="376"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-852.36217)">
+    <g
+       style="display:block"
+       id="g3014"
+       transform="matrix(9.2997748,0,0,9.2997748,281.65476,176.12942)">
+      <g
+         id="favorite"
+         style="fill:#ed2458"
+         transform="matrix(0.86377488,0.50387791,-0.50387791,0.86377488,-15.607114,69.366951)">
+        <path
+           id="path3006"
+           d="M 12,21.4 10.6,20 C 5.4,15.4 2,12.3 2,8.5 2,5.4 4.4,3 7.5,3 9.2,3 10.9,3.8 12,5.1 13.1,3.8 14.8,3 16.5,3 19.6,3 22,5.4 22,8.5 22,12.3 18.6,15.4 13.4,20 L 12,21.4 z"
+           inkscape:connector-curvature="0"
+           style="fill:#ed2458" />
+      </g>
+     
+      <rect
+         style="fill:#ed2458;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="rect3802"
+         width="5.5461264"
+         height="1.2834011"
+         x="-18.125158"
+         y="78.652931"
+         ry="0.64170057"
+         transform="matrix(0.99842403,0.05612006,-0.05612006,0.99842403,0,0)" />
+      <rect
+         ry="0.64170057"
+         y="79.936333"
+         x="-17.865423"
+         height="1.2834011"
+         width="5.5461264"
+         id="rect3804"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         transform="matrix(0.99842403,0.05612006,-0.05612006,0.99842403,0,0)" />
+      <rect
+         ry="0.64170057"
+         y="81.189178"
+         x="-16.70425"
+         height="1.2834011"
+         width="5.5461264"
+         id="rect3806"
+         style="fill:#ed2458;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         transform="matrix(0.99842403,0.05612006,-0.05612006,0.99842403,0,0)" />
+      <rect
+         style="fill:#ed2458;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="rect3808"
+         width="2.2618349"
+         height="1.2834011"
+         x="-20.631451"
+         y="78.622375"
+         ry="0.64170057"
+         transform="matrix(0.99842403,0.05612006,-0.05612006,0.99842403,0,0)" />
+      <rect
+         ry="0.64170057"
+         y="78.589966"
+         x="-25.879452"
+         height="1.2834011"
+         width="5.0358133"
+         id="rect3810"
+         style="fill:#ed2458;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         transform="matrix(0.99842403,0.05612006,-0.05612006,0.99842403,0,0)" />
+      <rect
+         style="fill:#ed2458;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="rect3812"
+         width="5.5461264"
+         height="1.2834011"
+         x="-17.09318"
+         y="87.844193"
+         ry="0.64170057"
+         transform="matrix(0.99842403,0.05612006,-0.05612006,0.99842403,0,0)" />
+      <rect
+         ry="0.64170057"
+         y="90.350624"
+         x="-15.148534"
+         height="1.2834011"
+         width="5.5461264"
+         id="rect3814"
+         style="fill:#ed2458;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         transform="matrix(0.99842403,0.05612006,-0.05612006,0.99842403,0,0)" />
+      <rect
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="rect3816"
+         width="5.5461264"
+         height="1.2834011"
+         x="-17.043888"
+         y="89.140625"
+         ry="0.64170057"
+         transform="matrix(0.99842403,0.05612006,-0.05612006,0.99842403,0,0)" />
+      <rect
+         transform="matrix(0.99842403,0.05612006,-0.05612006,0.99842403,0,0)"
+         ry="0.64170057"
+         y="87.581421"
+         x="-24.723297"
+         height="1.2834011"
+         width="2.2618349"
+         id="rect3818"
+         style="fill:#ed2458;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+      <rect
+         transform="matrix(0.99842403,0.05612006,-0.05612006,0.99842403,0,0)"
+         style="fill:#ed2458;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="rect3820"
+         width="5.0358133"
+         height="1.2834011"
+         x="-22.31197"
+         y="87.651573"
+         ry="0.64170057" />
+      <rect
+         style="fill:#ed2458;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="rect3822"
+         width="2.2618349"
+         height="1.2834011"
+         x="-18.035168"
+         y="90.323357"
+         ry="0.64170057"
+         transform="matrix(0.99842403,0.05612006,-0.05612006,0.99842403,0,0)" />
+      <rect
+         ry="0.64170057"
+         y="90.290947"
+         x="-23.283165"
+         height="1.2834011"
+         width="5.0358133"
+         id="rect3824"
+         style="fill:#ed2458;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         transform="matrix(0.99842403,0.05612006,-0.05612006,0.99842403,0,0)" />
+      <rect
+         transform="matrix(0.99842403,0.05612006,-0.05612006,0.99842403,0,0)"
+         ry="0.64170057"
+         y="81.188286"
+         x="-24.60672"
+         height="1.2834011"
+         width="2.2618349"
+         id="rect3826"
+         style="fill:#ed2458;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+      <rect
+         transform="matrix(0.99842403,0.05612006,-0.05612006,0.99842403,0,0)"
+         style="fill:#ed2458;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="rect3828"
+         width="5.0358133"
+         height="1.2834011"
+         x="-22.072313"
+         y="81.176163"
+         ry="0.64170057" />
+       <path
+         sodipodi:type="arc"
+         style="fill:#800000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path3018"
+         sodipodi:cx="347.22763"
+         sodipodi:cy="248.59453"
+         sodipodi:rx="8.841444"
+         sodipodi:ry="8.841444"
+         d="m 356.06907,248.59453 a 8.841444,8.841444 0 1 1 -17.68288,0 8.841444,8.841444 0 1 1 17.68288,0 z"
+         transform="matrix(0.09288127,0.05418173,-0.05418173,0.09288127,-30.934836,39.825796)" />
+      <path
+         transform="matrix(0.09288127,0.05418173,-0.05418173,0.09288127,-26.363112,42.480176)"
+         d="m 356.06907,248.59453 a 8.841444,8.841444 0 1 1 -17.68288,0 8.841444,8.841444 0 1 1 17.68288,0 z"
+         sodipodi:ry="8.841444"
+         sodipodi:rx="8.841444"
+         sodipodi:cy="248.59453"
+         sodipodi:cx="347.22763"
+         id="path3790"
+         style="fill:#800000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         transform="matrix(0.25331256,0.14776837,-0.14776837,0.25331256,-62.780156,-28.67167)"
+         d="m 356.06907,248.59453 a 8.841444,8.841444 0 1 1 -17.68145,-0.15928"
+         sodipodi:ry="8.841444"
+         sodipodi:rx="8.841444"
+         sodipodi:cy="248.59453"
+         sodipodi:cx="347.22763"
+         id="path3792"
+         style="fill:#800000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         sodipodi:type="arc"
+         sodipodi:start="0"
+         sodipodi:end="3.1596087"
+         sodipodi:open="true" />
+ 
+      <g
+         id="g3943"
+         transform="matrix(0.99690695,0.07859092,-0.07859092,0.99690695,-22.848116,72.882677)">
+        <path
+           sodipodi:nodetypes="ccccc"
+           inkscape:connector-curvature="0"
+           id="rect3924"
+           d="m 15.487498,-0.92172966 c 2.959093,0.121571 5.441627,1.095173 7.47666,2.86885266 l -0.425097,0.556348 c -2.4782,-1.79746166 -4.531372,-2.48840266 -7.037575,-2.60571666 z"
+           style="fill:#ffd42a;fill-opacity:1;stroke:none" />
+        <path
+           style="fill:#ffd42a;fill-opacity:1;stroke:none"
+           d="M 22.502735,3.531372 C 19.543642,3.409801 17.124113,2.619965 15.089081,0.84628534 l 0.329933,-0.770753 C 17.897214,1.8729943 19.938778,2.597611 22.44498,2.714925 z"
+           id="path3928"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           sodipodi:nodetypes="ccccc"
+           inkscape:connector-curvature="0"
+           id="rect3935"
+           d="m 15.491279,-0.9218567 0.100733,0.82387004 c -0.188049,-0.003 -0.25282,0.07502 -0.156165,0.188037 -0.06678,0.07156 -0.280724,0.61439149 -0.34558,0.75841549 -1.182149,-1.08441001 -0.915368,-1.69656794 0.401012,-1.77032253 z"
+           style="fill:#ffd42a;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+        <path
+           sodipodi:nodetypes="ccccc"
+           inkscape:connector-curvature="0"
+           id="rect3938"
+           d="m 22.964159,1.955525 c 0.678057,0.667502 0.448336,1.5161474 -0.472544,1.572514 l -0.04725,-0.811196 c 0.127279,-0.01981 0.167677,-0.09879 0.08179,-0.229522 z"
+           style="fill:#ffd42a;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+      </g>
+    </g>
+  </g>
+
+  </svg>
+      
+    </div>
+  </section>
+
+  <!-- Sección 1: Header -->
+  <section id="header" class="header">
+    <h1>Nelson y Olinda</h1>
+    <p class="anniversary-date">21 de Mayo del 2021</p>
+    
+        Desde siempre y para siempre ❤️<br>
+    Feliz 4° Aniversario Mi Amor!
+  </section>
+
+  <!-- Sección 2: Tarjeta -->
+  <section id="card">
+    <span class="spantitulo">Una Tarjeta Para Ti</span>
+    <div class="card-container">
+      <div class="card">
+        <div class="imgBox">
+          <div class="bark"></div>
+          <img src="https://us.123rf.com/450wm/theovectorart/theovectorart2401/theovectorart240100198/223445681-elaboraci%C3%B3n-de-tarjetas-para-el-d%C3%ADa-de-san-valent%C3%ADn-4.jpg?ver=6">
+        </div>
+        <div class="details">
+          <h4 class="color1">Con Todo Mi Corazón</h4>
+          <h4 class="color2 margin">¡FELÍZ ANIVERSARIO!</h4>
+          <p>Mi amor,</p>
+          <p>4 años a tu lado</p>
+          <p>han sido el mejor regalo.</p>
+          <p>Eres mi persona favorita</p>
+          <p>y no cambiaría nada</p>
+          <p>de nuestro camino juntos.</p>
+          <p>Gracias por amarme</p>
+          <p>y permitirme amarte.</p>
+          <p class="text-right">Con todo mi amor,</p>
+          <p class="text-right">♥Nelson</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección 4: Carrusel -->
+  <section id="carousel">
+    <span class="spantitulo">Nuestros Recuerdos</span> 
+    <div class="carousel-product">
+      <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+           <img src="./images/inicio.jpeg"  >
+          </div>
+          <div class="swiper-slide">
+           <img src="./images/cargando love.jpeg"  >
+          </div>
+          <div class="swiper-slide">
+           <img src="./images/ascensor.jpeg"  >
+          </div>
+          <div class="swiper-slide">
+           <img src="./images/ab2.jpeg"  >
+          </div>
+          <div class="swiper-slide">
+           <img src="./images/ab.jpeg"  >
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección 5: Carta de amor -->
+  <section  >
+    <span class="spantitulo">Una Carta Para Ti</span>  
+  <main class="carta-main">
+    <div class="carta-container">
+      <div class="carta-cover"></div>
+      <span class="carta-heart">♥</span>
+      <p class="carta-paper" id="cartaMessage">
+        <b>Mi Amada Olinda,</b><br>
+        Hoy celebramos nuestro 4° aniversario, y cada día a tu lado es una bendición. Gracias por estos años de amor, 
+         risas y aprendizaje juntos.<br>
+       Te amo infinitamente, Nelson
+      </p>
+      <div class="carta-letter"></div>
+    </div>
+    <div class="carta-options">
+      <button id="cartaOpen">Abrir</button>
+      <button id="cartaClose">Cerrar</button>
+    </div>
+  </main>
+  </section>
+  <!-- Sección 6: Calendario con mensajes -->
+  <header class="amor_olinda_header">
+        <h1>❤️ Para Mi Amor, Felíz aniversario!❤️✨ </h1> 
+    </header>    
+  <section id="calendar">
+    <span>Te quiero expresarte que: </span>
+    <div class="amor_olinda_container">
+        <ul class="amor_olinda_messages"></ul>
+        <div class="amor_olinda_controls">
+            <button class="amor_olinda_button" onclick="amor_olinda_adjustMessage(-1)">▲</button>
+            <button class="amor_olinda_button" onclick="amor_olinda_adjustMessage(1)">▼</button>
+        </div>
+        <div class="amor_olinda_swipe_hint">
+            Desliza arriba o abajo para ver más mensajes
+        </div>
+    </div>       
+  </section>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    // Scroll suave a las secciones
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Inicializar Swiper
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      loop: true,
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true
+      },
+      pagination: {
+        el: ".swiper-pagination"
+      }
+    });
+
+    // Canvas con corazones
+    var canvas = document.querySelector("canvas"),
+      ctx = canvas.getContext("2d");
+
+    var ww, wh;
+
+    function onResize() {
+      ww = canvas.width = window.innerWidth;
+      wh = canvas.height = window.innerHeight;
+    }
+
+    ctx.strokeStyle = "red";
+    ctx.shadowBlur = 25;
+    ctx.shadowColor = "hsla(0, 100%, 60%,0.5)";
+
+    var precision = 100;
+    var hearts = [];
+    var mouseMoved = false;
+    
+    function onMove(e) {
+      mouseMoved = true;
+      if (e.type === "touchmove") {
+        hearts.push(new Heart(e.touches[0].clientX, e.touches[0].clientY));
+        hearts.push(new Heart(e.touches[0].clientX, e.touches[0].clientY));
+      } else {
+        hearts.push(new Heart(e.clientX, e.clientY));
+        hearts.push(new Heart(e.clientX, e.clientY));
+      }
+    }
+
+    var Heart = function (x, y) {
+      this.x = x || Math.random() * ww;
+      this.y = y || Math.random() * wh;
+      this.size = Math.random() * 2 + 1;
+      this.shadowBlur = Math.random() * 10;
+      this.speedX = (Math.random() + 0.2 - 0.6) * 8;
+      this.speedY = (Math.random() + 0.2 - 0.6) * 8;
+      this.speedSize = Math.random() * 0.05 + 0.01;
+      this.opacity = 1;
+      this.vertices = [];
+      for (var i = 0; i < precision; i++) {
+        var step = (i / precision - 0.5) * (Math.PI * 2);
+        var vector = {
+          x: 15 * Math.pow(Math.sin(step), 3),
+          y: -(
+            13 * Math.cos(step) -
+            5 * Math.cos(2 * step) -
+            2 * Math.cos(3 * step) -
+            Math.cos(4 * step)
+          )
+        };
+        this.vertices.push(vector);
+      }
+    };
+
+    Heart.prototype.draw = function () {
+      this.size -= this.speedSize;
+      this.x += this.speedX;
+      this.y += this.speedY;
+      ctx.save();
+      ctx.translate(-1000, this.y);
+      ctx.scale(this.size, this.size);
+      ctx.beginPath();
+      for (var i = 0; i < precision; i++) {
+        var vector = this.vertices[i];
+        ctx.lineTo(vector.x, vector.y);
+      }
+      ctx.globalAlpha = this.size;
+      ctx.shadowBlur = Math.round((3 - this.size) * 10);
+      ctx.shadowColor = "hsla(0, 100%, 60%,0.5)";
+      ctx.shadowOffsetX = this.x + 1000;
+      ctx.globalCompositeOperation = "screen";
+      ctx.closePath();
+      ctx.fill();
+      ctx.restore();
+    };
+
+    function render(a) {
+      requestAnimationFrame(render);
+
+      hearts.push(new Heart());
+      ctx.clearRect(0, 0, ww, wh);
+      for (var i = 0; i < hearts.length; i++) {
+        hearts[i].draw();
+        if (hearts[i].size <= 0) {
+          hearts.splice(i, 1);
+          i--;
+        }
+      }
+    }
+
+    /*
+    onResize();
+    window.addEventListener("mousemove", onMove);
+    window.addEventListener("touchmove", onMove);
+    window.addEventListener("resize", onResize);
+    requestAnimationFrame(render);
+
+    // Carta interactiva
+    document.getElementById('cover').addEventListener('click', function() {
+      this.classList.toggle('open-cover');
+      document.getElementById('paper').classList.toggle('open*/
+      </script>
+<script>
+      const urlSearchParams = new URLSearchParams(window.location.search);
+    const messageCustom = urlSearchParams.get("message");
+
+    if (messageCustom) {
+      const mainMessageElement = document.querySelector("#cartaMessage");
+      mainMessageElement.textContent = decodeURI(messageCustom);
+    }
+
+    const btnOpen = document.querySelector("#cartaOpen");
+    const btnClose = document.querySelector("#cartaClose");
+
+    btnClose.disabled = true;
+
+    btnOpen.addEventListener("click", () => {
+      btnOpen.disabled = true;
+      btnClose.disabled = false;
+
+      const cover = document.querySelector(".carta-cover");
+      cover.classList.add("carta-open-cover");
+
+      setTimeout(() => {
+        cover.style.zIndex = -1;
+        const paper = document.querySelector(".carta-paper");
+        paper.classList.remove("carta-close-paper");
+        paper.classList.add("carta-open-paper");
+
+        const heart = document.querySelector(".carta-heart");
+        heart.style.display = "block";
+      }, 500);
+    });
+
+    btnClose.addEventListener("click", () => {
+      btnOpen.disabled = false;
+      btnClose.disabled = true;
+
+      const cover = document.querySelector(".carta-cover");
+      const paper = document.querySelector(".carta-paper");
+      paper.classList.remove("carta-open-paper");
+      paper.classList.add("carta-close-paper");
+
+      setTimeout(() => {
+        cover.style.zIndex = 0;
+        cover.classList.remove("carta-open-cover");
+
+        const heart = document.querySelector(".carta-heart");
+        heart.style.display = "none";
+      }, 500);
+    });
+</script>
+ <script>
+        const amor_olinda_loveMessages = [
+            "👶 Olinda, mi querida bebé",
+            "❤️ Primero que nada, te amo infinitamente",
+            "❤️ Eres mi todo, mi universo entero ❤️",
+            "💑 Eres mi alma gemela, mi complemento perfecto",
+            "👰‍♀️ Y por supuesto...",
+            "💍 Mi futura esposa 🤭",
+            "🤗 Siempre estaré ahí para ti, pase lo que pase",
+            "🌍 No importa lo lejos que estemos físicamente",
+            "💖 Eres la más bonita, la más linda y la más divertida",
+            "🌟 La chica más dulce y especial del mundo",
+            "😍 En una palabra, eres simplemente perfecta 😍",
+            "💏 Por ti, soy el hombre más feliz del mundo",
+            "❤️ Estoy muy agradecido de haberte conocido ❤️",
+            "😊 Siempre daré lo mejor de mí para hacerte feliz",
+            "🌟 Eres la persona más importante en mi vida",
+            "😢 No quiero perderte nunca, eres mi tesoro",
+            "😍 Y créeme, no quiero a nadie más que a ti",
+            "❤️ No hay nadie mejor que tú, mi amor ❤️",
+            "🏆 ¡¡Eres la mejor bebé, sin duda alguna!!",
+            "❤️ O debería decir, ¡El amor de mi vida! ❤️",
+            "⌛ Aunque estemos lejos por tus estudios",
+            "🤨 Y enfrentemos algunas dificultades",
+            "💪 Juntos superaremos todo obstáculo",
+            "❤️ La distancia me ha hecho darme cuenta",
+            "❤️ Lo importante que eres en mi vida ❤️",
+            "🥂 Este mensaje es para ti,",
+            "💞 Mi amor, mi Olinda querida",
+            "🍎 Feliz aniversario, mi vida ❤️",
+            "🎉 Te extraño cada momento del día",
+            "💖 Eres y serás siempre el amor de mi vida",
+            "❤️ Te amo muchísimo, mi Olinda ❤️"
+        ];
+    
+        const amor_olinda_messagesEl = document.querySelector(".amor_olinda_messages");
+        let amor_olinda_currentIndex = 0;
+        let amor_olinda_activeIndex = amor_olinda_currentIndex;
+        const amor_olinda_rotate = -360 / amor_olinda_loveMessages.length;
+        
+        function amor_olinda_init() {
+            // Crear corazones flotantes aleatorios
+            createHearts();
+            
+            amor_olinda_loveMessages.forEach((message, idx) => {
+                const liEl = document.createElement("li");
+                liEl.style.setProperty("--day_idx", idx);
+                
+                const numEl = document.createElement("div");
+                numEl.className = "amor_olinda_item_number";
+                numEl.textContent = idx + 1;
+                
+                const textEl = document.createElement("div");
+                textEl.className = "amor_olinda_item_text";
+                textEl.textContent = message;
+                
+                liEl.appendChild(numEl);
+                liEl.appendChild(textEl);
+                amor_olinda_messagesEl.appendChild(liEl);
+            });
+            
+            amor_olinda_messagesEl.style.setProperty("--rotateDegrees", amor_olinda_rotate);
+            
+            // No cambiar el color de fondo en la inicialización
+            // Mostramos el primer mensaje como activo pero mantenemos el color de fondo rosa
+            const firstEl = document.querySelector(`.amor_olinda_messages li:nth-child(1)`);
+            firstEl.classList.add("active_message");
+            amor_olinda_messagesEl.style.setProperty("--currentDay", 0);
+            
+            // Configurar detección de gestos táctiles
+            setupTouchEvents();
+            
+            // Ocultar pista de deslizamiento después de un tiempo
+            setTimeout(() => {
+                document.querySelector('.amor_olinda_swipe_hint').classList.add('hidden');
+            }, 10000);
+        }
+        
+        function createHearts() {
+            for (let i = 0; i < 10; i++) {
+                setTimeout(() => {
+                    const heart = document.createElement('div');
+                    heart.className = 'amor_olinda_heart';
+                    heart.textContent = '❤️';
+                    heart.style.left = Math.random() * 100 + 'vw';
+                    heart.style.top = Math.random() * 100 + 'vh';
+                    heart.style.animationDuration = (Math.random() * 5 + 3) + 's';
+                    heart.style.animationDelay = (Math.random() * 5) + 's';
+                    document.body.appendChild(heart);
+                    
+                    // Eliminar corazones después de un tiempo para no sobrecargar el DOM
+                    setTimeout(() => {
+                        heart.remove();
+                    }, 15000);
+                }, i * 1000);
+            }
+        }
+        
+        function setupTouchEvents() {
+            let startY = 0;
+            let endY = 0;
+            
+            document.addEventListener('touchstart', function(e) {
+                startY = e.touches[0].clientY;
+            }, false);
+            
+            document.addEventListener('touchend', function(e) {
+                endY = e.changedTouches[0].clientY;
+                handleSwipe();
+            }, false);
+            
+            function handleSwipe() {
+                const diffY = startY - endY;
+                const threshold = 50; // umbral mínimo para considerar un deslizamiento
+                
+                if (Math.abs(diffY) > threshold) {
+                    if (diffY > 0) {
+                        // Deslizamiento hacia arriba
+                        amor_olinda_adjustMessage(1);
+                    } else {
+                        // Deslizamiento hacia abajo
+                        amor_olinda_adjustMessage(-1);
+                    }
+                }
+            }
+        }
+        
+        function amor_olinda_adjustMessage(nr) {
+            amor_olinda_currentIndex += nr;
+            amor_olinda_messagesEl.style.setProperty("--currentDay", amor_olinda_currentIndex);
+            
+            const activeEl = document.querySelector("li.active_message");
+            if (activeEl) activeEl.classList.remove("active_message");
+            
+            amor_olinda_activeIndex = (amor_olinda_activeIndex + nr + amor_olinda_loveMessages.length) % amor_olinda_loveMessages.length;
+            
+            const newActiveEl = document.querySelector(
+                `.amor_olinda_messages li:nth-child(${amor_olinda_activeIndex + 1})`
+            );
+            
+            // Aquí es donde se cambia el color de fondo del body basado en el color del elemento activo
+            console.log("Cambiando color de fondo al color del mensaje #" + (amor_olinda_activeIndex + 1));
+            document.body.style.backgroundColor = window.getComputedStyle(
+                newActiveEl
+            ).backgroundColor;
+            
+            newActiveEl.classList.add("active_message");
+            
+            // Efecto de vibración suave para feedback táctil en móviles (si está disponible)
+            if (navigator.vibrate) {
+                navigator.vibrate(50);
+            }
+        }
+        
+        window.addEventListener("keydown", (e) => {
+            switch (e.key) {
+                case "ArrowUp":
+                    amor_olinda_adjustMessage(-1);
+                    break;
+                case "ArrowDown":
+                    amor_olinda_adjustMessage(1);
+                    break;
+                default:
+                    return;
+            }
+        });
+        
+        // Iniciar el carrusel
+        amor_olinda_init();
+                
+</script>
